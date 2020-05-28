@@ -1,0 +1,11 @@
+body{
+    font-family: monospace;
+    background-color: #253D5B;
+    color: #969696;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+body>header>h1>a{
+    color:#C3C9E9;
+}
