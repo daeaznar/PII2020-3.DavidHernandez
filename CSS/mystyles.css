@@ -3,33 +3,58 @@ body{
     background-color: #253D5B;
     color: #969696;
     padding-left: 100px;
-    padding-top: 50px;
+    padding-right: 100px;
+    padding-top: 20px;
 }
 
-body>header>h1>a{
-    color:#C3C9E9;
+header{
+    width: 100%;
+    display: flex;
+    background-color: #D8C99B;
+    margin-bottom: 30px;
 }
 
-body nav ul{
+header a{
+    width: 20%;
+}
+
+header nav{
+    width: 80%;
+   font-size: 15px;
+}
+
+header nav ul{
     list-style-type: none;
     width: 100%;
     color: azure;
     display: flex; 
 }
 
-body div{
-    width: 100%;
-    display: flex;
-    height: 60px;
-    background-color: #797270;
+body article section{
+    text-align: justify;
 }
 
-body div img{
-    width: 20%;
+section.text_one{
+    background-color: #DBE4EE;
+    color: #253D5B;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-body div nav{
-    width: 80%;
-   font-size: 15px;
-
+#id_example_one{
+    background-color: #96897B;
+    color: #253D5B;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
+body footer {
+    text-align: center;
+}
+
