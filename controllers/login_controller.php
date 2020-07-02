@@ -8,7 +8,27 @@ $database = "univa";
 $connection = mysqli_connect($host_name, $host_user, $host_pass, $database);
 
 if ($connection) {
-    echo "You're connected!";
+    //echo "You're connected!";
+    $sqlquery = "SELECT * FROM users";
+    $result = mysqli_query($connection, $sqlquery);
+    //var_dump($result);
+    if (mysqli_num_rows($result)>0) {
+        while($row = mysqli_fetch_assoc($result)){
+            echo "ID: ".$row['id']."- Name: ".$row['name']."</br>";
+            $user_email = $_GET['user_email'];
+            $user_pass = $_GET['user_pass'];
+
+            if ($row['email']==$user_email  && $row['password']==$user_pass) {
+                echo "Email and User found";
+            } else {
+                # code...
+            }
+            
+        }
+    } else {
+       echo "Empty table";
+    }
+    
 } else {
     echo "Sorry, NOT connected";
 }
