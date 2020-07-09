@@ -14,12 +14,13 @@ if ($connection) {
     //var_dump($result);
     if (mysqli_num_rows($result)>0) {
         while($row = mysqli_fetch_assoc($result)){
-            echo "ID: ".$row['id']."- Name: ".$row['name']."</br>";
+           // echo "ID: ".$row['id']."- Name: ".$row['name']."</br>";
             $user_email = $_GET['user_email'];
             $user_pass = $_GET['user_pass'];
 
             if ($row['email']==$user_email  && $row['password']==$user_pass) {
-                echo "Email and User found";
+                //echo "Email and User found";
+                header('Location:/PII2020-3.DavidHernandez/welcome_user.html');
             } else {
                 # code...
             }
